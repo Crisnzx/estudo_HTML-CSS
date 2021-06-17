@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth Child</title>
+    <style>
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        li {
+            padding: 0.25rem;
+            margin: 0.25rem 0;
+            text-align: center;
+            list-style: none;
+        }
+
+        /* First Child */
+        li:first-child {
+            background-color: antiquewhite;
+        }
+
+        /* Last Child */
+
+        ul li:last-child {
+            background-color: blueviolet;
+        }
+
+        ul li:nth-child(3) {
+            background-color: brown;
+        }
+
+        /* Every 3 */
+
+        ul li:nth-child(3n+1) {
+            background-color: orange;
+        }
+
+        /* Every 3 after 8 */
+
+        ul li:nth-child(3n + 8) {
+            background-color: yellow;
+        }
+
+        /* Impar */
+        ul li:nth-child(odd) {
+            background: #ccc;
+        }
+
+        /* Par */
+
+        ul li:nth-child(even) {
+            background: #ddd;
+        }
+
+        table {
+            width: 600px;
+            border-spacing: 0;
+        }
+
+        table td, table th{
+            padding: 5px 10px;
+            text-align: start;
+        }
+
+        table thead tr {
+            background: black;
+            
+            color: white;
+            border-radius: 30px;
+        }
+
+        
+        table thead tr th:first-child{
+            border-radius: 5px 0 0 0;
+        }
+
+        table thead tr th:last-child {
+            border-radius: 0 5px 0 0;
+        }
+        
+        table tbody tr:nth-child(odd) td {
+            background: rgb(221, 221, 221);
+            
+        }
+
+        table tbody tr:last-child td:first-child{
+            border-radius: 0 0 0 5px;
+        }
+
+        table tbody tr:last-child td:last-child {
+            border-radius: 0 0 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th>Curso</th>
+                <th>Posição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cristovão</td>
+                <td>760</td>
+                <td>Ciência da Computação</td>
+                <td>1°</td>
+            </tr>
+            <tr>
+                <td>Ismael</td>
+                <td>710</td>
+                <td>Ciência da Computação</td>
+                <td>2°</td>
+            </tr>
+            <tr>
+                <td>Suelen</td>
+                <td>697</td>
+                <td>Ciência da Computação</td>
+                <td>3°</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>660</td>
+                <td>Administração</td>
+                <td>4°</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>644</td>
+                <td>Ciências Contábeis</td>
+                <td>5°</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>632</td>
+                <td>Ciência de Dados</td>
+                <td>6°</td>
+            </tr>
+            <tr>
+                <td>Cristovão</td>
+                <td>760</td>
+                <td>Ciência da Computação</td>
+                <td>7°</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadows</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h1#a {
+            color: darkblue;
+            /* h-shadow | v-shadow | blur | color */
+            text-shadow: 3px 3px 5px red;
+        }
+
+        h1#b {
+            color: darkred;
+            text-shadow: -5px 2px blue;
+        }
+
+        h1#c {
+            color: white;
+            text-shadow: -5px 3px 10px black;
+        }
+
+        h1#d strong {
+            text-shadow: 2px 2px lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="a">Welcome To My Course 1</h1>
+    <h1 id="b">Welcome To My Course 2</h1>
+    <h1 id="c">Welcome To My Course 3</h1>
+    <h1 id="d"><strong>Welcome</strong> To My Course 4</h1>
+</body>
+</html>

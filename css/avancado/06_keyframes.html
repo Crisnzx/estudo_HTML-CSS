@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+
+        :root {
+            --time-animation: 3s;
+
+        }
+        * {
+            box-sizing: border-box;
+            
+            padding: 0;
+
+        }
+        
+        body {
+            background-color: #333;
+        }
+        .box {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            animation: animate1 var(--time-animation) forwards ease-out;
+            animation-iteration-count: infinite;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .box-1, .box-2, .box-3, .box-4 {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            
+        }
+
+        .box-1 { 
+            animation: animate-b1 var(--time-animation) forwards ease-out;
+            animation-iteration-count: infinite;
+
+            }
+        
+        .box-2 { 
+            animation: animate-b2 var(--time-animation) forwards ease-out;
+            animation-iteration-count: infinite;
+            }
+
+        .box-3 { 
+            animation: animate-b3 var(--time-animation) forwards ease-out;
+            animation-iteration-count: infinite;
+            }
+            
+        .box-4 { 
+            animation: animate-b4 var(--time-animation) forwards ease-out;
+            animation-iteration-count: infinite;
+            }    
+
+
+        @keyframes animate-b1 {
+
+            10% {
+                background-color: white;
+                border-radius: 0;
+            }
+            
+            25% {
+                background-color: red; 
+                border-radius: 100% 0 0 0; 
+            }
+
+            100% {
+                background-color: red; 
+                border-radius: 100% 0 0 0; 
+            }
+                
+        }  
+
+        @keyframes animate-b2 {
+
+            35% {
+                background-color: white;
+                border-radius: 0;
+            }
+
+            50% {
+
+                background-color: green; 
+                border-radius: 0 100% 0 0;
+            }
+
+            100% {
+                background-color: green; 
+                border-radius: 0 100% 0 0;
+            }
+        }
+
+        @keyframes animate-b4 {
+
+            60% {
+                background-color: white;
+                border-radius: 0;
+            }
+            
+            75% {
+
+                background-color: yellow; 
+                border-radius: 0 0 100% 0;
+                
+            }
+
+            100% {
+                
+                background-color: yellow; 
+                border-radius: 0 0 100% 0;
+            }
+        }
+
+        @keyframes animate-b3 {
+
+            85% {
+                background-color: white;
+                border-radius: 0;
+            }
+            100% {
+                background-color: blue; 
+                border-radius: 0 0 0 100%;
+            }
+        }
+        
+
+        @keyframes animate1 {
+
+            10% {
+                top: 200px;
+                left: 200px;
+                
+            }
+            25% {
+                top: 100px;
+                left: 100px;
+                
+            }
+
+            35% {
+                top: 200px;
+                left: 200px;
+                
+            }
+            50% {
+                top: 100px;
+                left: 300px;
+                
+            }
+
+            60% {
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                top: 300px;
+                left: 300px;
+                
+            }
+
+            85% {
+                top: 200px;
+                left: 200px;
+                
+            }
+            100% {
+                top: 300px;
+                left: 100px;                
+            }
+
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <div class="container">
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+            </div>
+            <div class="container">
+                <div class="box-3"></div>
+                <div class="box-4"></div>
+            </div>
+            
+        </div> 
+</body>
+</html>

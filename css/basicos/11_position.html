@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+
+        body {
+
+            height: 2000px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: #333;
+            position: relative;
+        }
+
+        #box-1 {
+            background-color: red;
+        }
+
+        #box-2 {
+            background-color: yellow;
+            position: absolute;
+            left: 100px;
+        }
+
+        #box-3 {
+            background-color: green;
+            top: 100px;
+            position: absolute;
+        }
+
+        #box-4 {
+           
+
+            position: fixed;
+            background-color: lightblue;
+        }
+
+        #box-5 {
+            background-color: darkblue;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }
+
+        #box-5 ul {
+            list-style-type: none;
+            color: white;
+            padding: 20px;
+            background-color: darkcyan;
+        }
+        #box-5 ul li {
+            
+           display: inline;
+            padding: 20px;
+        }
+
+        #box-5 ul li:hover {
+            background-color: darkgreen;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
