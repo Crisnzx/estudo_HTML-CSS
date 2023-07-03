@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Biologia Total</title>
+</head>
+
+<body>
+    <div id="hamburger">
+        <div id="logodiv">
+            <img id="logo" src="./assets/logoBT.png" alt="Logo books Total">
+        </div>
+        <img id="closeH" width="20px" src="./assets/closeH.svg" alt="Sair do site">
+        <div id="subjects">
+            <div class="subject biology">
+                <img width="20px" src="./assets/books.svg" alt="Biologia">
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject physics">
+                <img width="20px" src="./assets/books.svg" alt="Física">
+                <a href="#">Física</a>
+            </div>
+            <div class="subject chemistry">
+                <img width="20px" src="./assets/books.svg" alt="Química">
+                <a href="#">Química</a>
+            </div>
+            <div class="subject math">
+                <img width="20px" src="./assets/books.svg" alt="Matemática">
+                <a href="#">Matemática</a>
+            </div>
+            <div class="subject history">
+                <img width="20px" src="./assets/books.svg" alt="História">
+                <a href="#">História</a>
+            </div>
+            <div class="subject geography">
+                <img width="20px" src="./assets/books.svg" alt="Geografia">
+                <a href="#">Geografia</a>
+            </div>
+            <div class="subject philosophy">
+                <img width="20px" src="./assets/books.svg" alt="Filosofia">
+                <a href="#">Filosofia</a>
+            </div>
+            <div class="subject sociology">
+                <img width="20px" src="./assets/books.svg" alt="Sociologia">
+                <a href="#">Sociologia</a>
+            </div>
+            <div class="subject portuguese">
+                <img width="20px" src="./assets/books.svg" alt="Português">
+                <a href="#">Português</a>
+            </div>
+            <div class="subject literature">
+                <img width="20px"src="./assets/books.svg" alt="Literatura">
+                <a href="#">Literatura</a>
+            </div>
+            <div class="subject redacao">
+                <img width="20px"src="./assets/books.svg" alt="Redação">
+                <a href="#">Redação</a>
+            </div>
+            <div class="subject english">
+                <img width="20px"src="./assets/books.svg" alt="Inglês">
+                <a href="#">Inglês</a>
+            </div>
+            <div class="subject spanish">
+                <img width="20px" src="./assets/books.svg" alt="Espanhol">
+                <a href="#">Espanhol</a>
+            </div>
+            <div class="subject interdisciplinar">
+                <img width="20px"src="./assets/books.svg" alt="interdisciplinar">
+                <a href="#">interdisciplinar</a>
+            </div>
+            <div class="subject lives">
+                <img width="20px" src="./assets/books.svg" alt="Lives">
+                <a href="#">Lives</a>
+            </div>
+            <div class="subject comunidade">
+                <img width="20px" src="./assets/books.svg" alt="Comunidade">
+                <a href="#">Comunidade</a>
+            </div>
+
+        </div>
+        <hr />
+        <div id="end">
+            <div class="star">
+                <img width="20px" src="./assets/star.svg" alt="books">
+                <a href="#">Meus Favoritos</a>
+            </div>
+            <div class="star">
+                <img width="20px" src="./assets/medal.svg" alt="books">
+                <a href="#">Jubicalouros</a>
+            </div>
+        </div>
+        <hr />
+        <div id="blog">
+            <a href="#">Blog</a>
+            <a href="#">Central de ajuda</a>
+        </div>
+        <hr />
+        <small>Versão 530</small>
+
+    </div>
+
+    <div id="content">
+        <header id="topbar">
+            <div id="change-subject-and-img">
+                <div id="change-subject" class="em">
+                    <a onclick="Modal.em()" id="button-em" href="#">Ensino médio</a>
+                    <a onclick="Modal.ru()" id="button-ru" href="#">Ref. Universitário</a>
+                </div>
+                <img width="20px" id="loupe" src="./assets/loupe.svg" alt="Pesquisar">
+            </div>
+            <a id="button-login" class="button" href="#">FAZER LOGIN</a>
+        </header>
+        <main>
+            <section id="jubialuno">
+                <h2 class="sr-only">Torne-se um Jubialuno</h2>
+                <div class="card jubialuno">
+                    <div id="text">
+                        <h3>AINDA NÃO É UM JUBIALUNO?</h3>
+                        <div>
+                            <p>Faça o seu cadastro agora e experimente gratuitamente por 7 dias:</p>
+                            <ul>
+                                <li>Videoaulas gratuitas de todas as disciplinas</li>
+                                <li>O primeiro plano de estudo completo de <b>qualquer curso</b></li>
+                                <li>E muito mais!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <a class="button" href="#">EXPERIMENTE GRÁTIS</a>
+                        <a class="button" href="#">JÁ SOU JUBIALUNO</a>
+                    </div>
+                </div>
+            </section>
+            <section id="cursos">
+                <div id="title">
+                    <h2>Cursos</h2>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="card cursos">
+                    <h3>Explore nossos cursos e descubra o melhor para você!</h3>
+                    <p>Aqui no Biologia Total temos vários cursos para você fazer e estudar tranquilo enquanto nós
+                        cuidamos do plano de estudo pra você!</p>
+                    <a href="#" id="see-all">VER TODOS</a>
+                </div>
+            </section>
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <div class="card agenda">
+                    <div id="calendar">
+                        <h3 id="month">ABRIL - MAIO 2021</h3>
+                        <div id="days-content">
+
+                            <img class="arrow" width="20px" src="./assets/left-arrow.svg" alt="Ícone seta esquerda">
+                            <div>
+                                <h3>25</h3>
+                                <p>dom</p>
+                            </div>
+                            <div>
+                                <h3>26</h3>
+                                <p>seg</p>
+                            </div>
+                            <div>
+                                <h3>27</h3>
+                                <p>ter</p>
+                            </div>
+                            <div>
+                                <h3>28</h3>
+                                <p>qua</p>
+                            </div>
+                            <div>
+                                <h3>29</h3>
+                                <p>qui</p>
+                            </div>
+                            <div>
+                                <h3>30</h3>
+                                <p>sex</p>
+                            </div>
+                            <div>
+                                <h3>01</h3>
+                                <p>sab</p>
+                            </div>
+                            <img class="arrow" width="20px" src="assets/right-arrow.svg" alt="Ícone seta direita">
+                        </div>
+                        <div id="events">
+                            <h3>Sexta-feira, 30 de Abril de 2021</h3>
+                            <p>Não temos evento agendado para este dia</p>
+                        </div>
+                    </div>
+                    <div id="description">
+                        <img width="120px" src="./assets/bt.png" alt="Logo Biologia Total">
+                        <h3>Sexta-feira, 30 de Abril de 2021</h3>
+                        <p>Olá Jubialuno(a), não temos evento programado para este dia, mas você pode conferir a
+                            programação completa pela agenda navegando através das setinhas ou clicando nos dias
+                            desejados.</p>
+                        <p><b>Curiosidade:</b><br />
+                            Em 2015, a sonda espacial MESSENGER, lançada contra a superfície de Mercúrio, encerra sua
+                            missão de 11 anos ao planeta</p>
+                    </div>
+                </div>
+            </section>
+            <section id="novas-videoaulas">
+                <h2>Videoaulas mais recentes</h2>
+                <div id="all-cards">
+                    <div class="card2 new-classes">
+                        <p class="subject geography">Geografia</p>
+                        <img class="thumbnail" height="170px" src="assets/putin.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">30:32</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>Putin e a Europa Sob Pressão</p>
+                        </div>
+                        <p class="teacher">Victor</p>
+                    </div>
+                    <div class="card2 new-classes">
+                        <p class="subject portuguese">Português</p>
+                        <img class="thumbnail" height="170px" src="assets/preteritos.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">26:57</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>Pretéritos</p>
+                        </div>
+                        <p class="teacher">Lauro</p>
+                    </div>
+                    <div class="card2 new-classes">
+                        <p class="subject portuguese">Português</p>
+                        <img class="thumbnail" height="170px" src="assets/imperativo.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">24:05</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>A formação do Imperativo</p>
+                        </div>
+                        <p class="teacher">Lauro</p>
+                    </div>
+                    <div class="card2 new-classes">
+                        <p class="subject spanish">Espanhol</p>
+                        <img class="thumbnail" height="170px" src="assets/mafalda.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">20:41</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>Mafalda</p>
+                        </div>
+                        <p class="teacher">Cassiane</p>
+                    </div>
+                    <div class="card2 new-classes">
+                        <p class="subject history">História</p>
+                        <img class="thumbnail" height="170px" src="assets/revoltas.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">40:50</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>Revoltas Emancipacionistas</p>
+                        </div>
+                        <p class="teacher">Dodô</p>
+                    </div>
+                    <div class="card2 new-classes">
+                        <p class="subject literature">Literatura</p>
+                        <img class="thumbnail" height="170px" src="assets/quinhentismo.png" alt="Putin e a Europa sob tensão">
+                        <p class="time">31:31</p>
+                        <div>
+                            <img width="20px" src="assets/play-button.svg" alt="Ícone play"> 
+                            <p>Quinhentismo</p>
+                        </div>
+                        <p class="teacher">Joãozinho</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

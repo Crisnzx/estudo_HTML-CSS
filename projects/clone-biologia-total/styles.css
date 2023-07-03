@@ -1,0 +1,700 @@
+/*GLOBAL ============================== */
+
+:root {
+
+    --gray-25: rgb(230, 230, 230);
+    --gray-50: rgb(238,238,238);
+    --blue-200: rgb(0, 81, 255);
+    --blue-400: rgb(0, 53,88);
+    --blue-500: rgb(0, 0, 92);
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    
+    display: flex;
+    height: 100vh;
+}
+
+
+
+
+#hamburger {
+    height: 100vh;
+    width: 220px;
+    background-color: white;
+    overflow: auto;
+
+}
+
+#content {
+    
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--gray-50);
+}
+
+a.button {
+    padding: 4px 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*SCROLLBAR ============================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--gray-25);
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(155, 155, 155, 0.5);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 155, 155, 0.8);
+  }
+/*TITLES ============================== */
+
+h2 {
+
+    margin: 20px 0 10px 40px;
+    color: var(--blue-400);
+}
+
+/*SCREEN-READER ============================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+/*TOPBAR ============================== */
+
+#topbar {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#loupe {
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+#button-login {
+    margin-right: 30px;
+    color: var(--blue-200);
+    border-color: var(--blue-200);
+}
+
+#button-login:hover {
+    background-color: var(--blue-200);
+    color: white;
+}
+
+#change-subject-and-img {
+
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*CHANGE-SUBJECT ============================== */
+
+div.em#change-subject {
+
+    background-color: var(--gray-50);
+    padding: 7px 16px 7px 5px;
+    border-radius: 20px;
+}
+
+div.em #button-em {
+
+    background-color: var(--blue-500);
+    color: white;
+    padding: 2px 23.5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+div.em #button-ru {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+
+div.ru#change-subject {
+
+    background-color: var(--gray-50);
+    padding: 7px 5px 7px 16px;
+    border-radius: 20px;
+    
+}
+
+div.ru #button-em {
+    
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+div.ru #button-ru {
+    
+    background-color: var(--blue-500);
+    color: white;
+    padding: 2px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+/*HAMBURGUER ============================== */
+
+#logodiv {
+    text-align: center;
+}
+#hamburger #logo {
+    margin-top: 1rem;
+}
+
+
+#hamburger img#closeH {
+
+    margin-top: 45px;
+    opacity: 0.2;
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+}
+
+#hamburger img#closeH:hover {
+
+    opacity: 1;
+}
+
+#hamburger .subject {
+
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 1.1rem;
+}
+
+
+
+#subjects img {
+
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+
+#end img {
+    
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+
+#hamburger a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+/*SUBJECTS ============================== */
+
+.subject:hover {
+
+    cursor: pointer;
+    opacity: 1;
+}
+
+.subject.biology:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.physics:hover {
+
+    filter: invert(52%) sepia(59%) saturate(528%) hue-rotate(97deg) brightness(98%) contrast(93%);
+}
+
+.subject.chemistry:hover {
+
+    filter: invert(10%) sepia(76%) saturate(6177%) hue-rotate(358deg) brightness(80%) contrast(110%);
+
+}
+
+.subject.math:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+
+}
+
+.subject.history:hover {
+
+    filter: invert(20%) sepia(15%) saturate(4133%) hue-rotate(325deg) brightness(92%) contrast(94%);}
+
+.subject.geography:hover {
+
+    filter: invert(52%) sepia(59%) saturate(528%) hue-rotate(97deg) brightness(98%) contrast(93%);
+}
+
+.subject.philosophy:hover {
+
+    filter: invert(50%) sepia(70%) saturate(428%) hue-rotate(22deg) brightness(98%) contrast(91%);
+}
+
+.subject.sociology:hover {
+
+    filter: invert(10%) sepia(76%) saturate(6177%) hue-rotate(358deg) brightness(80%) contrast(110%);
+}
+
+.subject.portuguese:hover {
+
+    filter: invert(42%) sepia(99%) saturate(370%) hue-rotate(359deg) brightness(94%) contrast(85%);
+
+}
+
+.subject.literature:hover {
+
+    filter: invert(42%) sepia(99%) saturate(370%) hue-rotate(359deg) brightness(94%) contrast(85%);
+
+}
+
+.subject.redacao:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.english:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.spanish:hover {
+
+    filter: invert(52%) sepia(95%) saturate(337%) hue-rotate(33deg) brightness(97%) contrast(91%);
+
+}
+
+.subject.interdisciplinar:hover {
+
+    filter: invert(54%) sepia(40%) saturate(727%) hue-rotate(134deg) brightness(92%) contrast(93%);
+
+}
+
+.subject.lives:hover {
+
+    filter: invert(50%) sepia(70%) saturate(428%) hue-rotate(22deg) brightness(98%) contrast(91%);
+
+}
+
+.subject.comunidade:hover {
+
+    filter: invert(24%) sepia(78%) saturate(474%) hue-rotate(344deg) brightness(95%) contrast(92%);
+
+}
+
+/*END ============================== */
+
+hr {
+    width: 90%;
+    margin: auto;
+    opacity: 0.5;
+}
+#end .star {
+
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    
+} 
+
+#blog {
+    display: grid;
+    margin-left: 20px;
+    margin-top: 1.1rem;
+
+}
+
+#blog a {
+    
+    font-size: 87.5%;
+    margin-bottom: 1.1rem;
+}
+
+#blog a:hover {
+    opacity: 1;
+}
+
+#blog :first-child {
+    color: var(--blue-200);
+}
+
+/*CARD ============================== */
+
+.card {
+
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+
+}
+/*CARD JUBIALUNO ============================== */
+
+.card.jubialuno {
+
+    background-image: linear-gradient(to bottom, rgb(28, 93, 203),rgb(2, 177, 214));
+    height: 180px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card.jubialuno #text {
+
+    padding: 0 40px;
+    width: 70%;
+    text-align: justify;
+}
+
+.card.jubialuno #text div {
+    display: grid;
+    justify-content: center;
+}
+
+.card.jubialuno #text h3 {
+
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card.jubialuno #text p {
+
+    margin-top: 10px;
+    color: white;
+    font-size: 87.5%;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.card.jubialuno #text ul {
+
+    margin-top: 10px;
+    color: white;
+}
+
+.card.jubialuno #buttons {
+
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 255, 0.075);
+    border-radius: 0 20px 20px 0;
+    font-size: 87.5%;
+}
+
+.card.jubialuno #buttons :first-child {
+
+    background-color: rgb(0, 197, 230);
+    color: white;
+    border: none;
+}
+
+.card.jubialuno #buttons :last-child {
+
+    border: solid 1.5px white;
+    color: white;
+    text-align: center;
+}
+
+.card.jubialuno #buttons :last-child:hover {
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid 1.5px white;
+    color: white;
+    text-align: center;
+}
+
+/*TITULO CURSOS ============================== */
+
+#cursos div:first-child {
+    
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    width: 97.5%;
+    margin: 30px 0 20px;
+}
+
+#cursos div h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#cursos div a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue-400);
+}
+/*CARD CURSOS ============================== */
+
+.card.cursos {
+
+    background-color: var(--gray-25);
+    height: 160px;
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+}
+
+.card.cursos h3 {
+    color: gray;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.card.cursos p {
+    color: black;
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+.card.cursos #see-all {
+    
+    background-color: var(--blue-200);
+    color: white;
+    font-weight: normal;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 15%;
+    text-align: center;
+}
+
+/*CARD AGENDA ============================== */
+
+.card.agenda {
+    display: flex;
+}
+
+/*CALENDÁRIO ============================== */
+
+#calendar {
+    padding: 1rem;
+    font-size: 90%;
+    width: 60%;
+    height: 35rem;
+    text-align: center;
+}
+
+#calendar #month {
+    padding-bottom: 1rem;
+    opacity: 0.7;
+}
+
+#days-content {
+
+    
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    height: 18rem;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(7, 1fr) 0.5fr;
+    
+}
+
+#days-content div {
+
+    padding: 1rem;
+    height: 100%;
+}
+
+#days-content div:hover {
+
+    background-color: var(--gray-50);
+    cursor: pointer;
+}
+
+#events {
+
+    padding: 1rem;
+    text-align: start;
+}
+
+#events h3 {
+    opacity: 0.6;
+}
+#events p {
+    opacity: 0.4;
+}
+
+.arrow {
+
+    
+    margin: 1.5rem auto;
+}
+
+/*DESCRIÇÃO ============================== */
+
+#description {
+
+    width: 40%;
+    padding: 5rem 3rem;
+    display: grid;
+    text-align: justify;
+    
+}
+
+#description img {
+
+    margin: 0 auto 2rem;
+
+}
+
+#description h3 {
+
+    opacity: 0.5;
+    font-size: 100%;
+ 
+}
+
+#description p {
+    margin-top: 1rem;
+}
+
+/*VIDEOAULAS MAIS RECENTES ============================== */
+
+#all-cards {
+
+    display: flex;
+    margin-bottom: 2rem;
+    
+    overflow: auto;
+}
+
+.card2 {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    height: 350px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.card2 .subject {
+
+    text-align: center;
+    margin-left: auto;
+    font-size: 75%;
+    width: 80px;
+    color: white;
+    border-radius: 1rem;
+    
+}
+
+.card2 .subject.geography {
+
+    background-color: rgb(26, 179, 26);
+
+}
+
+.card2 .subject.portuguese {
+    background-color: rgb(255, 106, 64);
+
+}
+
+.card2 .subject.spanish {
+    background-color: rgb(142, 168, 47);
+
+}
+
+.card2 .subject.history {
+    background-color: rgb(172, 102, 78);
+
+}
+
+.card2 .subject.literature {
+    background-color: rgb(247, 128, 154);
+
+}
+
+.card2.new-classes .thumbnail {
+
+    
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card2.new-classes div {
+
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card2.new-classes .time {
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.card2.new-classes div img {
+    margin-right: 1rem;
+}
+
+.card2.new-classes .teacher {
+
+    opacity: 0.5;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
