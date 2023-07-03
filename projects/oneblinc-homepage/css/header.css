@@ -1,0 +1,164 @@
+#page-header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: var(--gray-brand);
+  padding: 3.2rem 0;
+}
+
+#page-header.secondary {
+  background-color: var(--background-blue);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#oneblinc-logo {
+  width: 19.2rem;
+  height: auto;
+}
+
+.header-container div {
+  display: flex;
+  align-items: center;
+}
+
+#header-navbar {
+  display: flex;
+  align-items: center;
+}
+
+#page-header.secondary .nav-link {
+  color: #fff;
+}
+
+#page-header.secondary svg {
+  fill: #fff;
+}
+
+#page-header.sticky .nav-link,
+#page-header .nav-link {
+  color: var(--gray-24);
+}
+
+.nav-link.login {
+  display: flex;
+  align-items: center;
+}
+
+#page-header.sticky {
+  position: sticky;
+  top: 0;
+  background-color: var(--gray-96);
+  box-shadow: 0 0.4rem 0.8rem 0 rgb(20 20 20 / 8%);
+  animation: header-appear 0.2s ease-out forwards;
+}
+
+#page-header.sticky svg {
+  fill: var(--gray-24);
+}
+
+#page-header.top-page {
+  animation: background-transition 0.2s ease-out forwards;
+}
+
+#page-header.secondary.top-page {
+  animation: background-secondary-transition 0.2s ease-out forwards;
+}
+
+#toggle-menu {
+  display: none;
+  margin-left: 2.4rem;
+}
+
+#toggle-menu .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#toggle-menu .icon.hidden {
+  display: none;
+}
+
+@keyframes header-appear {
+  from {
+    transform: translateY(-12rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes background-transition {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: var(--gray-brand);
+  }
+}
+
+@keyframes background-secondary-transition {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: var(--background-blue);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  #page-header {
+    padding: 1.6rem 0;
+  }
+
+  #oneblinc-logo {
+    height: 4rem;
+    width: auto;
+  }
+
+  #header-navbar .nav-link {
+    display: none;
+  }
+
+  #header-navbar .nav-link.login {
+    display: flex;
+  }
+
+  #toggle-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #page-header {
+    padding: 1.6rem 0;
+  }
+  #oneblinc-logo {
+    height: 4rem;
+    width: auto;
+  }
+
+  #header-navbar .nav-link {
+    display: none;
+  }
+
+  #header-navbar .nav-link.login {
+    display: flex;
+  }
+
+  #get-started-btn {
+    display: none;
+  }
+
+  #toggle-menu {
+    display: block;
+    margin: 0;
+  }
+}

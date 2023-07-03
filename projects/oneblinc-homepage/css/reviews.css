@@ -1,0 +1,112 @@
+#reviews {
+  background-color: var(--gray-brand);
+  background-image: url('../assets/pngs/one-blinc-logo-cropped-right.png');
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 10%;
+  padding: 8rem 0 10.4rem;
+  color: var(--gray-24);
+}
+
+#reviews .container div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+#reviews .container > div:first-child h1 {
+  font-weight: bold;
+  font-size: 5.6rem;
+}
+
+#reviews .container > div:first-child p {
+  font-size: 2.4rem;
+  width: 50%;
+  text-align: right;
+  line-height: 1.33;
+}
+
+#trustpilot-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5.6rem;
+}
+
+#trustpilot-cta div {
+  text-align: right;
+  width: 50%;
+}
+
+#trustpilot-cta div h3 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+#trustpilot-cta div h2 {
+  font-size: 5.6rem;
+  margin-bottom: 2.4rem;
+}
+
+#trustpilot-cta div p {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+  line-height: 1.25;
+}
+
+#trustpilot-cta div a {
+  display: inline-block;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  #trustpilot-cta {
+    flex-direction: column-reverse;
+  }
+
+  #reviews .container div:first-child p {
+    text-align: center;
+  }
+
+  #trustpilot-cta div {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #reviews .container div:first-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reviews .container div:first-child h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  #reviews .container > div:first-child > p {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  #trustpilot-cta {
+    flex-direction: column-reverse;
+    padding: 4rem 2.4rem 5.6rem;
+  }
+
+  #trustpilot-cta div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #trustpilot-cta div h3 {
+    font-size: 1.6rem;
+  }
+
+  #trustpilot-cta div h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+}
